@@ -9,7 +9,6 @@ rel_path = "prod\endsong_{}.json"
 my_platforms = ["Windows 10 (10.0.10586; x64)", "Windows 10 (10.0.14393; x64)", "Windows 10 (10.0.15063; x64)", "Windows 7 (6.1.7601; x64; SP1; S)", "Windows 8 (6.2.9200; x64)", "Windows 8.1 (6.3.9600; x64)", "Android OS 4.4.2 API 19 (HTC, HTC One mini)", "Partner samsung_2014_tv_v7a8 Samsung 2012 TV", "Android [arm 0]", "iOS 7.0 (iPad3,6)", "iOS 7.1.2 (iPhone3,1)", "WebPlayer (websocket RFC6455)"]
 streams = []
 count = 0
-ptfrms = set()
 
 for i in range(file_count):
 
@@ -22,9 +21,8 @@ for i in range(file_count):
 
     for stream in d:
         if stream['ts'][0:4] < limit_year:
-            if stream['platform'] in my_platforms:
+            if stream['platform'] in my_platforms and stream['master_metadata_track_name'] != None:
                 streams.append(stream)
-                ptfrms.add(stream['platform'])
                 count += 1
         else:
             break
@@ -35,3 +33,8 @@ out = open("output.json", "w", encoding="utf8")
 json.dump(streams, out, ensure_ascii=False)
 out.close()    
 print("Wrote {} streams to output.".format(count))
+
+# 213.861 streams in total
+#  73.109 streams before 2018
+#  27.174 streams before 2018 on my platforms
+#  25.163 streams with no nulls
