@@ -1,10 +1,15 @@
 import os
 import json
 
-file_count = 14             # amount of endsong files
-date_limit = "2018-01-01"   # date limit; streams equal or later will be ignored
+# spotify-endsong.py
+#
+# This python script uses Spotify's entire streaming history in json format (endsong files)
+# to filter entries based on custom specifications (date, device).
 
-# platforms related to my streams
+file_count = 14             # amount of endsong files
+date_limit = "2018-01-01"   # date limit; streams that day or later will be ignored
+
+# platforms related to my devices
 my_platforms = ["Windows 10 (10.0.10586; x64)", "Windows 10 (10.0.14393; x64)", "Windows 10 (10.0.15063; x64)", "Windows 7 (6.1.7601; x64; SP1; S)", "Windows 8 (6.2.9200; x64)", "Windows 8.1 (6.3.9600; x64)", "Android OS 4.4.2 API 19 (HTC, HTC One mini)", "Partner samsung_2014_tv_v7a8 Samsung 2012 TV", "Android [arm 0]", "iOS 7.0 (iPad3,6)", "iOS 7.1.2 (iPhone3,1)", "WebPlayer (websocket RFC6455)"]
 
 abs_path = os.path.dirname(__file__)
