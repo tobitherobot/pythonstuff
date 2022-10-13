@@ -1,8 +1,8 @@
 [
     {    
-        "ts": "2014-06-14T19:58:23Z",
+        "ts": "2017-06-14T19:58:23Z",
         "username": "MySpotifyAccount",
-        "platform": "Windows 7",
+        "platform": "Windows 10 (10.0.10586; x64)",
         "ms_played": 231511,
         "conn_country": "DE",
         "ip_addr_decrypted": "456.456.456.456",
@@ -25,7 +25,7 @@
     {
         "ts": "2015-09-12T04:42:07Z",
         "username": "MySpotifyAccount",
-        "platform": "Android OS",
+        "platform": "Android OS 4.4.2 API 19 (HTC, HTC One mini)",
         "ms_played": 217760,
         "conn_country": "SI",
         "ip_addr_decrypted": "123.123.123.123",
@@ -46,7 +46,7 @@
         "incognito_mode": false
     },
     {
-        "ts": "2019-12-30T14:14:35Z",
+        "ts": "2016-12-30T14:14:35Z",
         "username": "MySpotifyAccount",
         "platform": "Android OS",
         "ms_played": 55002,
@@ -69,9 +69,9 @@
         "incognito_mode": false
     },
     {
-        "ts": "2017-07-14T16:06:50Z",
+        "ts": "2018-07-14T16:06:50Z",
         "username": "MySpotifyAccount",
-        "platform": "Android OS",
+        "platform": "Windows 10 (10.0.10586; x64)",
         "ms_played": 566,
         "conn_country": "DE",
         "ip_addr_decrypted": "123.123.123.123",
@@ -92,7 +92,7 @@
         "incognito_mode": false
     },
     {
-        "ts": "2016-06-14T11:16:07Z",
+        "ts": "2018-06-14T11:16:07Z",
         "username": "MySpotifyAccount",
         "platform": "Android OS",
         "ms_played": 194000,
