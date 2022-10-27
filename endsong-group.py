@@ -6,8 +6,8 @@ import json
 # This python script uses Spotify's entire streaming history in json format (endsong files)
 # to group entries based on the number of the times a song is played.
 
-input_file = "out/filtered.json"    # input file
-output_file = "out/grouped.json"    # output file
+input_file = "test/filtered.json"    # input file
+output_file = "test/grouped.json"    # output file
 
 abs_path = os.path.dirname(__file__)
 songs = {}
