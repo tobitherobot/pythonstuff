@@ -1,7 +1,7 @@
 import os
 import json
 
-# spotify-endsong.py
+# endsong-filter.py
 #
 # This python script uses Spotify's entire streaming history in json format (endsong files)
 # to filter entries based on custom specifications (date, device).
@@ -35,7 +35,7 @@ for i in range(file_count):
     print("Parsed endsong_{}.json...".format(i))
 
 streams.sort(key=lambda x: x['ts'])
-out = open("output.json", "w", encoding="utf8")
+out = open("out/filtered.json", "w", encoding="utf8")
 json.dump(streams, out, ensure_ascii=False)
 out.close()    
 print("Wrote {} streams to output.".format(count))
