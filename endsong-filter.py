@@ -7,7 +7,7 @@ import json
 # to filter entries based on custom specifications (date, device).
 
 input_path = "prod"                 # directory path to endsong files
-output_file = "out/filtered.json"   # name of output file
+output_file = "out/filtered.json"   # output file
 upper_date_limit = "2021-01-01"     # streams that day or later will be ignored
 lower_date_limit = "2019-01-01"     # streams earlier than that day will be ignored
 
